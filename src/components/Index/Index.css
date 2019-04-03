@@ -1,0 +1,40 @@
+.IndexBack {
+    height: 150vh;
+    width: 100%;
+    background-color: #71895c;
+    z-index: 1;
+}
+
+.IndexMain {
+    position: absolute;
+    margin: 25vmax auto 0 auto;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.IndexTop {
+    background-color: rgba(161, 161, 161, 0.81);
+    height: 20vmin;
+    width: 100%;
+    max-width: 85vw;
+    top: 0;
+
+    position: fixed;
+    z-index: 5;
+    padding: 2vh; /*TODO: improve*/
+}
+
+.Map {
+
+}
+
+.topLogo {
+    width: 20vmin;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+    opacity: .6;
+    z-index: 8;
+    transition: all 1s;
+    will-change: auto;
+}
