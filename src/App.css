@@ -28,7 +28,18 @@
     color: #61dafb;
 }
 
+.clock {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*margin: 1vmax auto 1vmax auto;*/
+    color: #6396c7;
+    font-size: small
+}
 
+.clock.blink {
+    color: #71895c;
+}
 
 .clockwise {
     animation: App-logo-spin infinite 20s linear;
@@ -112,13 +123,11 @@
 }
 
 .topBrandPic {
-    alignment: center;
-    right: 5vw;
-    top: 5vh;
-    margin-left: 15vh;
-    width: 40vmin;
-    margin-top: 5vh;
-    transition: all 2s;
+    float: right;
+    right: 2vw;
+    top: 0;
+    width: 30vmin;
+    margin-top: 1vh;
 }
 
 .topLogo {
@@ -130,7 +139,7 @@
 }
 
 .topTitle {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     box-sizing: border-box;
     margin: 3vmin;
@@ -139,7 +148,7 @@
     font-style: normal;
     color: #009750;
     text-align: center;
-    font-size: 100%;
+    font-size: 75%;
     max-height: 18vmin;
     z-index: 1;
     transition: all 1s ease-out;
