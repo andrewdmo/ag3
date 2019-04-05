@@ -1,8 +1,9 @@
 {
   "name": "ag3",
-  "version": "0.1.0",
+  "version": "4.2.01",
   "private": true,
   "dependencies": {
+    "google-map-react": "^1.1.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"

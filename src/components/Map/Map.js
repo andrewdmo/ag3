@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import MapGeo from "../../containers/Map.geo";
 
-export default class IndexMap extends Component {
+export default class Map extends Component {
     render() {
         return (
             <div className="Map">
-                MAP
+                <MapGeo/>
             </div>
         )
     }
