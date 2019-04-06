@@ -12,8 +12,9 @@ export default class MapGeo extends Component {
             coords: {
                 currentCoords: {
                     center: {
-
-                        lat: 35.2537099, lng: -83.4134851, workDate: new Date().toLocaleTimeString()
+                        lat: 35.2537099,
+                        lng: -83.4134851,
+                        workDate: new Date().toLocaleTimeString()
                     }
                 }
             }, // coords
@@ -167,7 +168,6 @@ export default class MapGeo extends Component {
         console.log('LIVEupdated: ', this.state.LIVEupdated);
         console.log('DBupdated: ', this.state.DBupdated);
         // console.log('zoom: ', zoom);
-
 
 
         return (

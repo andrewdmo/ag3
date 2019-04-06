@@ -1,3 +1,4 @@
+
 .IndexBack {
     height: 150vh;
     width: 100%;
@@ -7,7 +8,8 @@
 
 .IndexMain {
     position: absolute;
-    margin: 25vmax auto 0 auto;
+    margin: 20vmax auto 0 auto;
+    height: 100%;
     width: 100%;
     background-color: gainsboro;
 }

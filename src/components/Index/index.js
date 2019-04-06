@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
-import FormBuck from '../Form/FormBuck';
-import Map from "../Map/Map";
+import IndexTop from "./IndexTop";
 
 export default class IndexMain extends Component {
 
     render() {
         return (
-            <div className="IndexMain">
-                <Map/>
-                <FormBuck/>
+            <div className="IndexBack">
+                <IndexTop/>
+                <IndexMain/>
             </div>
         );
     }
-
 }

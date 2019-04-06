@@ -27,6 +27,18 @@ const ExampleComponent = ({message}) => (
 
 export default class Gmap extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            center: {
+                // @35.2535921,-83.4138238,366a,35y,12.96h/data=!3m1!1e3
+                lat: 35.2535921,
+                lng: -4138238,
+            },
+            zoom: 11
+        }
+    }
+
     // TODO: zoom and sat
 
     render() {
@@ -36,8 +48,9 @@ export default class Gmap extends Component {
                 <GoogleMapReact
                     bootstrapURLKeys={{key: 'AIzaSyAEgsGQb9pHiOX0p8-VpZj46VMwOxg0csU'}}
                     // center={this.props.coords.currentCoords}
-                    zoom={this.props.zoom}
-                    center={this.props.center}
+                    zoom={this.state.center.zoom}
+                    center={this.state.center}
+
                     defaultZoom={7}
                     fullScreenControl={true}
                     fullScreenControlOptions={{position: 'BOTTOM_LEFT'}}
