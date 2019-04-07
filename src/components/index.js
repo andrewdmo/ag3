@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import IndexTop from './Index/IndexTop';
-import IndexMain from './Index/IndexMain';
+import IndexBody from './Index/IndexBody';
 
 import './Index/Index.css';
 
@@ -9,7 +9,7 @@ export default class Index extends Component {
         return (
             <div className='IndexBack'>
                 <IndexTop/>
-                <IndexMain/>
+                <IndexBody/>
             </div>
         );
     }

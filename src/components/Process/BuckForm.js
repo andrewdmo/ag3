@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './form.css';
+import './process.css';
 
-export default class FormBuck extends Component {
+export default class BuckForm extends Component {
 
     constructor(props) {
         super(props);
@@ -118,7 +118,7 @@ export default class FormBuck extends Component {
 
         // const hidden = true;
         return (
-            <div className="formIndex">
+            <div className="form">
                 <fieldset>
 
                     <form onSubmit={this.formSubmit}>

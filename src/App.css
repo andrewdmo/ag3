@@ -30,15 +30,19 @@
 
 .clock {
     position: absolute;
+    z-index: -1;
     bottom: 0;
-    right: 0;
-    margin: 0 1vmin 1vmin 0;
+    left: 0;
+    margin: 1vmin;
     color: #6396c7;
-    font-size: small
+    /*background-color: #b1c78b;*/
+    font-size: small;
+    transition: all 250ms ease-in;
 }
 
 .clock.blink {
-    color: #71895c;
+    color: #6b8e23;
+    transition: all 250ms ease-out;
 }
 
 .clockwise {
@@ -60,6 +64,160 @@
     transition: all 1s ease-out;
 }
 
+.menuBar {
+    z-index: 7;
+    margin: 1vmin auto 0 auto;
+    position: absolute;
+    opacity: 1.2;
+    height: 2.5rem;
+    width: 100%;
+    /*max-width: 95%;*/
+    padding-left: 1vmin;
+    right: 0;
+    top: 10vh;
+    /*background: #6396c7;*/
+    /*background: rgba(45, 45, 124, 0.87);*/
+    background-size: cover;
+    border: 2px solid #073763;
+    /*border: 1px solid #8f3900;*/
+    border-radius: 4px;
+    overflow: visible;
+    vertical-align: center;
+}
+
+.menuBar.hidden {
+    position: absolute;
+    z-index: 8;
+}
+
+.menuBarFieldBack {
+    /*max-width: 15vw;*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+}
+
+.menuBarFieldBack.values {
+    max-width: 35vw;
+    right: 0;
+    border: 2px solid #073763;
+    border-radius: 4px;
+    background-color: rgba(226, 226, 226, 0.81);
+}
+
+/*.menuText.dataField:nth-child(2) {*/
+/*position: relative;*/
+/*}*/
+
+.menuText {
+    /*position: absolute;*/
+    opacity: .9;
+    display: inline-block;
+    /*width: 100%;*/
+    will-change: transform, color; /*keep here*/
+    float: right;
+    color: #bfbf56;
+    /*font-family: system ui, sans-serif;*/
+    font-style: italic;
+    /*font-size: 1.2em;*/
+    margin: 0 1vw;
+    vertical-align: center;
+    text-align: center;
+    z-index: 8;
+}
+
+.menuText.dataField {
+    display: inline-block;
+    /*height: 1.5em;*/
+    /*width: fit-content;*/
+    float: right;
+    font-style: italic;
+    font-size: 1em;
+    color: #073763;
+    background-color: #e2e2e2;
+    /*background-size: cover;*/
+    border-radius: 4px;
+    vertical-align: center;
+    text-align: center;
+    z-index: 7;
+}
+
+.menuText.dataField.values {
+    padding: 0 !important;
+}
+
+.menuText.home {
+    color: #073763; /*default but also use current*/
+    /*float: left;*/
+}
+
+.menuText:hover {
+    will-change: transform, color; /*keep here*/
+    color: rgb(85, 87, 255);
+    transform: scale(1.1);
+    opacity: 1.2;
+}
+
+.top {
+    position: fixed;
+    background-color: rgba(161, 161, 161, 0.81);
+    width: 100%;
+    height: auto;
+    max-width: 91vw;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    padding: 1vmin; /*TODO: improve*/
+}
+
+.topBrandPic {
+    position: absolute;
+    right: 2vmin;
+    top: 2vmin;
+    width: 20vmin;
+    margin: 1vmin
+}
+
+.topLogo {
+    /*position: absolute;*/
+    width: 15vmin;
+    float: left;
+    /*left: 0;*/
+    margin: 1vmin;
+    opacity: .6;
+    z-index: 8;
+}
+
+.topTitle {
+    box-sizing: border-box;
+    font-family: "Baskerville", normal, sans-serif;
+    font-style: normal;
+    color: #71895c;
+    max-height: 18vmin;
+    margin: 1vmin auto;
+    z-index: 1;
+    transition: all 1s ease-in;
+}
+
+.topTitle.error{
+    margin: 20vmin;
+    height: 80vh;
+    color: red;
+    transition: all 500ms ease-in;
+}
+
+
+
+h1.topTitle {
+    margin-top: 0;
+    width: fit-content;
+}
+
+h2.topTitle {
+    margin-bottom: 0;
+    width: fit-content;
+}
 
 /*FASTER */
 .shade:hover {
@@ -86,51 +244,7 @@
 
 .shadow:active {
     filter: drop-shadow(1vw 1vh 2px rgba(52, 52, 52, 0.5));
-    -webkit-filter: drop-shadow(1vw 1vh 2px rgba(52, 52, 52, 0.5));
-}
-
-.top {
-    position: fixed;
-    background-color: rgba(161, 161, 161, 0.81);
-    width: 100%;
-    height: auto;
-    max-width: 85vw;
-    top: 0;
-    right: 0;
-    z-index: 5;
-    padding: 2vh; /*TODO: improve*/
-}
-
-.topBrandPic {
-    float: right;
-    right: 2vw;
-    top: 0;
-    width: 30vmin;
-    margin-top: 1vh;
-}
-
-.topLogo {
-    width: 15vmin;
-    position: absolute;
-    left: 0;
-    opacity: .6;
-    z-index: 8;
-}
-
-.topTitle {
-    /*position: absolute;*/
-    top: 0;
-    box-sizing: border-box;
-    margin: 3vmin;
-    font-family: "Baskerville", normal, sans-serif;
-    letter-spacing: 0;
-    font-style: normal;
-    color: #009750;
-    text-align: center;
-    font-size: 75%;
-    max-height: 18vmin;
-    z-index: 1;
-    transition: all 1s ease-out;
+    -webkit-filter: drop-shadow(1vw 1vh 0px rgba(52, 52, 52, 0.5));
 }
 
 @keyframes App-logo-spin {

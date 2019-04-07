@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import TopLogo from "./TopLogo";
 import Logo_ from '../../assets/Logo_.jpg'
-import Clock from "./Clock";
+import MenuBar from "./MenuBar";
 
 
 export default class IndexTop extends Component {
@@ -23,12 +23,11 @@ export default class IndexTop extends Component {
             <div className="top">
                 <TopLogo/>
                 <img src={Logo_} alt={'TopLogo'} className="topBrandPic shadow"/>
-                <div className="topTitle shadow">
-
-                    <h1>AG3:</h1>
-                    <h2>the Future of Now</h2>
+                <div>
+                    <h1 className="topTitle shadow">AG3:</h1>
+                    <h2 className="topTitle shadow">the Future of Now</h2>
                 </div>
-                <Clock/>
+                <MenuBar/>
             </div>
         );
     }

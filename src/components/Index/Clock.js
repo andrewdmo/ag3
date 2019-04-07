@@ -37,14 +37,14 @@ export default class Clock extends Component {
         if (this.state.clockRed === true) {
             return (
                 <div>
-                    <p className={'clock blink'}>
+                    <p className={'clock blink shadow'}>
                         {this.state.time}
                     </p>
                 </div>
             );
         } else return (
             <div>
-                <p className={'clock'}>
+                <p className={'clock shadow'}>
                     {this.state.time}
                 </p>
             </div>

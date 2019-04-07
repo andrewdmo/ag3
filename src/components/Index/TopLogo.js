@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Logo_2 from '../../assets/Logo_2.jpg';
 import Index from "../index";
+import Clock from "./Clock";
 
 export default class TopLogo extends Component {
     constructor(props) {
