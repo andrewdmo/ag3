@@ -1,8 +1,12 @@
-.Map {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    max-width: 960px;
-    height: 50%;
-    margin-top: 5vh; /*10 vh no good in HD*/
+/*.Map {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    max-width: 960px;*/
+/*    height: 50%;*/
+/*    margin-top: 5vh; !*10 vh no good in HD*!*/
+/*}*/
+
+#map {
+    height: 30vh;
 }

@@ -21,11 +21,13 @@ export default class IndexTop extends Component {
 
         return (
             <div className="top">
-                <TopLogo/>
-                <img src={Logo_} alt={'TopLogo'} className="topBrandPic shadow"/>
                 <div>
-                    <h1 className="topTitle shadow">AG3:</h1>
-                    <h2 className="topTitle shadow">the Future of Now</h2>
+                    <TopLogo/>
+                    <div>
+                        <h1 className="topTitle shadow">AG3:</h1>
+                        <h3 className="topTitle shadow">the Future of Now</h3>
+                    </div>
+                    <img src={Logo_} alt={'TopBrand'} className="topBrandPic shadow"/>
                 </div>
                 <MenuBar/>
             </div>

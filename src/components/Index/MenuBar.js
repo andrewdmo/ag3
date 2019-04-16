@@ -8,6 +8,8 @@ export default class MenuBar extends Component {
     render() {
         return (
             <div className="menuBar">
+                <Clock/>
+
                 <NavLink exact to="/"
                          className="menuText shadow">Home/Map
                 </NavLink>
@@ -31,8 +33,6 @@ export default class MenuBar extends Component {
                 <NavLink exact to="/process"
                          className="menuText shadow">Processing
                 </NavLink>
-
-                <Clock/>
             </div>
         )
     }

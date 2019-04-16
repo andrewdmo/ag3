@@ -28,16 +28,18 @@
     color: #61dafb;
 }
 
+#leafletMap {
+    height: 180px;
+}
+
 .clock {
-    position: absolute;
     z-index: -1;
-    bottom: 0;
-    left: 0;
+    float: right;
     margin: 1vmin;
     color: #6396c7;
     /*background-color: #b1c78b;*/
     font-size: small;
-    transition: all 250ms ease-in;
+    transition: all 750ms ease-in;
 }
 
 .clock.blink {
@@ -65,24 +67,9 @@
 }
 
 .menuBar {
-    z-index: 7;
-    margin: 1vmin auto 0 auto;
-    position: absolute;
-    opacity: 1.2;
-    height: 2.5rem;
-    width: 100%;
-    /*max-width: 95%;*/
+    margin: 5vmin auto 1vmin auto;
+    max-width: 95%;
     padding-left: 1vmin;
-    right: 0;
-    top: 10vh;
-    /*background: #6396c7;*/
-    /*background: rgba(45, 45, 124, 0.87);*/
-    background-size: cover;
-    border: 2px solid #073763;
-    /*border: 1px solid #8f3900;*/
-    border-radius: 4px;
-    overflow: visible;
-    vertical-align: center;
 }
 
 .menuBar.hidden {
@@ -111,20 +98,15 @@
 /*}*/
 
 .menuText {
-    /*position: absolute;*/
+    position: relative;
+    float: left;
     opacity: .9;
-    display: inline-block;
-    /*width: 100%;*/
-    will-change: transform, color; /*keep here*/
-    float: right;
-    color: #bfbf56;
-    /*font-family: system ui, sans-serif;*/
+    color: #3450ae;
     font-style: italic;
-    /*font-size: 1.2em;*/
-    margin: 0 1vw;
+    font-size: 1em;
+    margin: 0 1vmin;
     vertical-align: center;
     text-align: center;
-    z-index: 8;
 }
 
 .menuText.dataField {
@@ -153,7 +135,6 @@
 }
 
 .menuText:hover {
-    will-change: transform, color; /*keep here*/
     color: rgb(85, 87, 255);
     transform: scale(1.1);
     opacity: 1.2;
@@ -168,6 +149,7 @@
     top: 0;
     right: 0;
     z-index: 5;
+    margin: 2vmin;
     padding: 1vmin; /*TODO: improve*/
 }
 
@@ -190,34 +172,21 @@
 }
 
 .topTitle {
-    box-sizing: border-box;
     font-family: "Baskerville", normal, sans-serif;
     font-style: normal;
+    text-align: center;
     color: #71895c;
     max-height: 18vmin;
-    margin: 1vmin auto;
-    z-index: 1;
-    transition: all 1s ease-in;
+    margin: 1vmin 10vmin auto auto;
 }
 
-.topTitle.error{
+.topTitle.error {
     margin: 20vmin;
     height: 80vh;
     color: red;
     transition: all 500ms ease-in;
 }
 
-
-
-h1.topTitle {
-    margin-top: 0;
-    width: fit-content;
-}
-
-h2.topTitle {
-    margin-bottom: 0;
-    width: fit-content;
-}
 
 /*FASTER */
 .shade:hover {
