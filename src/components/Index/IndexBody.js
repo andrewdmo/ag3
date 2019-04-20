@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import OldMap from "../Map/oldMap";
+import Map from "../Map/Map";
 // import OldMap from "../OldMap/gitMap";
 import Error from "../Error";
 import {Route, Switch} from "react-router-dom";
