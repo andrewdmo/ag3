@@ -38,8 +38,8 @@ import {Component} from 'react';
 //
 //
 //     const size = {
-//         // width: 640, // Map width in pixels
-//         // height: 380, // Map height in pixels
+//         // width: 640, // OldMap width in pixels
+//         // height: 380, // OldMap height in pixels
 //
 //         //viewport:
 //         width: window.innerWidth,

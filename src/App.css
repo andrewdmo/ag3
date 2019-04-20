@@ -148,7 +148,7 @@
     max-width: 91vw;
     top: 0;
     right: 0;
-    z-index: 5;
+    z-index: 9;
     margin: 2vmin;
     padding: 1vmin; /*TODO: improve*/
 }

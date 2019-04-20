@@ -4,11 +4,11 @@ import L from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
 
-export default class Map extends Component {
+export default class OldMap extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
+        this.state = {``
             center: {
                 // @35.2535921,-83.4138238,366a,35y,12.96h/data=!3m1!1e3
                 lat: 35.2535921,
@@ -21,7 +21,7 @@ export default class Map extends Component {
     componentDidMount() {
         const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
-        const osmAttrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+        const osmAttrib = 'OldMap data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
         const osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 12, attribution: osmAttrib});
 
         this.map = L.map('map', {

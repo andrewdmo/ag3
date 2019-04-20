@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import GoogleMapReact from 'google-map-react';
-// import {center, zoom} from '../containers/Map.fitBounds';
+// import {center, zoom} from '../containers/OldMap.fitBounds';
 
 
 // from: https://www.npmjs.com/package/google-map-react

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Map from "../Map/Map";
-// import Map from "../Map/gitMap";
+import OldMap from "../Map/oldMap";
+// import OldMap from "../OldMap/gitMap";
 import Error from "../Error";
 import {Route, Switch} from "react-router-dom";
 import Process from "../Process/Process";

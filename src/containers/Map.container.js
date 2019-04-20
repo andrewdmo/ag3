@@ -5,7 +5,7 @@
 // import 'google-map-react/utils';
 // import {fitBounds} from "google-map-react/utils";
 // // import {FitBounds} from './FitBounds';
-// import MapGeo from './Map.geo';
+// import MapGeo from './OldMap.geo';
 //
 //
 // export default class MapContainer extends Component {
@@ -924,8 +924,8 @@
 //         // console.log('minLng: ', minLng);
 //
 //         const size = {
-//             // width: 640, // Map width in pixels
-//             // height: 380, // Map height in pixels
+//             // width: 640, // OldMap width in pixels
+//             // height: 380, // OldMap height in pixels
 //
 //             //viewport:
 //             width: window.innerWidth,

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import GoogleMapReact from 'google-map-react';
 
 // from: https://www.npmjs.com/package/google-map-react
-// this is the 'circle' in middle of Map
+// this is the 'circle' in middle of OldMap
 
 export const ExampleComponent = ({opacity}, {message}) => (
     <div style={{

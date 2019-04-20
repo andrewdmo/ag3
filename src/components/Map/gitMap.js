@@ -196,7 +196,7 @@ class Map extends Component {
 
     init(id) {
         if (this.state.map) return;
-        // this function creates the Leaflet map object and is called after the Map component mounts
+        // this function creates the Leaflet map object and is called after the OldMap component mounts
         let map = L.map(id, config.params);
         L.control.zoom({ position: "bottomleft"}).addTo(map);
         L.control.scale({ position: "bottomleft"}).addTo(map);
