@@ -19,8 +19,9 @@ export default class OldMap extends Component {
     }
 
     componentDidMount() {
-        const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
+        // this method uses API from original Leaflet:
+        const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
         const osmAttrib = 'OldMap data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
         const osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 12, attribution: osmAttrib});
 
