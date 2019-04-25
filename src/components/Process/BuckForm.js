@@ -49,6 +49,8 @@ export default class BuckForm extends Component {
             // buckedPer: (this.state.bucked / this.state.unbucked) * 100,
             // qcPer: (this.state.qc / this.state.unbucked) * 100,
         }, () => {
+
+            //calculate totals:
             this.setState({
                 buckedPer: ((this.state.bucked / this.state.unbucked) * 100).toFixed(0),
                 qcPer: ((this.state.qc / this.state.unbucked) * 100).toFixed(0),

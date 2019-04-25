@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import Map from "../Map/Map";
-// import OldMap from "../OldMap/gitMap";
 import Error from "../Error";
 import {Route, Switch} from "react-router-dom";
 import Process from "../Process/Process";
@@ -8,6 +6,7 @@ import Harvest from "../Harvest/Harvest";
 import Fruit from "../Fruit/Fruit";
 import Plant from "../Plant/Plant";
 import Germ from "../Germ/Germ";
+import MapPage from "../Map/MapPage";
 
 export default class IndexBody extends Component {
 
@@ -15,7 +14,7 @@ export default class IndexBody extends Component {
         return (
             <div className="IndexMain">
                 <Switch>
-                    <Route exact path={["/", "/index", "/home", "/map"]} component={Map}/>
+                    <Route exact path={["/", "/index", "/home", "/map"]} component={MapPage}/>
                     <Route exact path={"/germ*"} component={Germ}/>
                     <Route exact path={"/plant*"} component={Plant}/>
                     <Route exact path={"/fruit*"} component={Fruit}/>
