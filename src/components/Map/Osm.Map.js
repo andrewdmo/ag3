@@ -5,10 +5,7 @@ import L from 'leaflet';
 
 
 export default class OsmMap extends Component {
-    constructor(props) {
-        super(props);
 
-    }
 
     componentDidMount() {
 
@@ -35,6 +32,8 @@ export default class OsmMap extends Component {
         if (container != null) {
             container._leaflet_id = null;
         }
+
+
 
         this.map = L.map('map', {
                 // center: [35.25332, -83.41597],
@@ -66,8 +65,9 @@ export default class OsmMap extends Component {
 
     render() {
         return (
-            <div id="map"/>
-
+            <div>
+                <div id="map"/>
+            </div>
         )
     }
 }

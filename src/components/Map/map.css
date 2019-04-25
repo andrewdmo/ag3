@@ -16,3 +16,17 @@
     height: 50%;
     margin: 1vmin auto;
 }
+
+/*#map:nth-child(n) {*/
+/*    position: relative;*/
+/*    height: 25%;*/
+
+/*}*/
+
+#map2 {
+    position: absolute;
+    height: 25%;
+    bottom: 0;
+    z-index: 1;
+
+}

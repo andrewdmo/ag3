@@ -34,6 +34,9 @@ export default class MapPage extends Component {
             <div>
                 <MapContainer center={this.state.center}
                               zoom={this.state.zoom}/>
+                <MapContainer center={this.state.center}
+                              zoom={this.state.zoom}/>
+
 
             </div>
 
