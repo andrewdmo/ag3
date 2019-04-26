@@ -126,7 +126,7 @@ export default class BuckForm extends Component {
                     <form onSubmit={this.formSubmit}>
                         <table>
                             <caption>
-                                AG3 Form Sheet 4.2.0
+                                AG3 Bucking Form 4.2.0
                             </caption>
 
                             <tbody>

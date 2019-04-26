@@ -52,13 +52,13 @@ export default class GermForm extends Component {
         }, () => {
 
             //calculate totals:
-            this.setState({
-                buckedPer: ((this.state.bucked / this.state.unbucked) * 100).toFixed(0),
-                qcPer: ((this.state.qc / this.state.unbucked) * 100).toFixed(0),
-                bioPer: ((this.state.bio / this.state.qc) * 100).toFixed(0),
-                bBudPer: ((this.state.bBud / this.state.qc) * 100).toFixed(0),
-                final: ((this.state.qc - this.state.bio - this.state.bBud))
-            })
+            // this.setState({
+            //     buckedPer: ((this.state.bucked / this.state.unbucked) * 100).toFixed(0),
+            //     qcPer: ((this.state.qc / this.state.unbucked) * 100).toFixed(0),
+            //     bioPer: ((this.state.bio / this.state.qc) * 100).toFixed(0),
+            //     bBudPer: ((this.state.bBud / this.state.qc) * 100).toFixed(0),
+            //     final: ((this.state.qc - this.state.bio - this.state.bBud))
+            // })
 
             // console.log('unbucked: ', this.state.unbucked, '\nbucked: ', this.state.bucked, '\nbuckedPer: ', this.state.buckedPer, '\nqc: ', this.state.qc, '\nqcPer: ', this.state.qcPer)
             // });
@@ -109,14 +109,14 @@ export default class GermForm extends Component {
 
     render() {
 
-        console.log(
-            'strain: ', this.state.strain,
-            '\nunbucked: ', this.state.unbucked,
-            '\nbucked: ', this.state.bucked,
-            '\nbuckedPer: ', this.state.buckedPer,
-            '\nqc: ', this.state.qc,
-            '\nqcPer: ', this.state.qcPer,
-            '\nsubmitForm: ', this.state.formSubmit);
+        // console.log(
+        //     'strain: ', this.state.strain,
+        //     '\nunbucked: ', this.state.unbucked,
+        //     '\nbucked: ', this.state.bucked,
+        //     '\nbuckedPer: ', this.state.buckedPer,
+        //     '\nqc: ', this.state.qc,
+        //     '\nqcPer: ', this.state.qcPer,
+        //     '\nsubmitForm: ', this.state.formSubmit);
 
 
         // const hidden = true;
@@ -127,7 +127,7 @@ export default class GermForm extends Component {
                     <form onSubmit={this.formSubmit}>
                         <table>
                             <caption>
-                                AG3 Form Sheet 4.2.0
+                                AG3 Germination Form 4.2.0
                             </caption>
 
                             <tbody>

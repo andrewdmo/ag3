@@ -1,0 +1,25 @@
+
+
+
+
+
+
+.germBack {
+    width: 100%;
+    height: 100%;
+    background-color: dimgray;
+}
+
+.ghBase{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 15em;
+    height: 50em;
+    background-color: lightgray;
+}
+
+{
+
+}

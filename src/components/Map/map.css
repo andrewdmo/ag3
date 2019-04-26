@@ -21,11 +21,7 @@
 
 /*}*/
 
-#map2 {
-    position: absolute;
-    height: 25%;
-    bottom: 0;
-}
+
 
 #mapContainer {
     position: absolute;
@@ -33,4 +29,10 @@
     right: 0;
     height: 50%;
     margin: 1vmin;
+}
+
+#map2 {
+    position: absolute;
+    /*height: 25%;*/
+    bottom: 0;
 }

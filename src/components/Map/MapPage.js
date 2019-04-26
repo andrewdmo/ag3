@@ -32,9 +32,12 @@ export default class MapPage extends Component {
         return (
             <div>
                 <MapContainer center={this.state.center}
-                              zoom={this.state.zoom}/>
-                {/*<MapContainer center={this.state.center}*/}
-                {/*              zoom={this.state.zoom}/>*/}
+                              zoom={this.state.zoom}
+                              first={true}/>
+                <MapContainer id='map2'
+                              center={this.state.center}
+                              zoom={this.state.zoom}
+                              first={false}/>
 
 
             </div>
