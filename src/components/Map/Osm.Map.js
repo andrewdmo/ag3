@@ -27,12 +27,11 @@ export default class OsmMap extends Component {
         console.log('lng: ' + lng);
         console.log('zm: ' + zm);
 
-        //supposed to clear MapPage:
+        //re-instantiate MapPage:
         const container = L.DomUtil.get('map');
         if (container != null) {
             container._leaflet_id = null;
         }
-
 
 
         this.map = L.map('map', {
@@ -41,13 +40,14 @@ export default class OsmMap extends Component {
                 zoom: zm,
                 layers: [
 
+
                     //sat from Goog:
                     L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
                         maxZoom: 50,
                         subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
                     }),
 
-                    //normal OSM:
+                    // //normal OSM:
                     L.tileLayer(osmUrl, {
                         minZoom: 1,
                         maxZoom: 50,
@@ -59,15 +59,15 @@ export default class OsmMap extends Component {
         );
 
         // this.map.setView(new L.LatLng(51.3, 0.7), 9);
-        this.map.addLayer(osm);
+
+        // adds new map:
+        // this.map.addLayer(osm);
     }
 
 
     render() {
         return (
-            <div>
                 <div id="map"/>
-            </div>
         )
     }
 }

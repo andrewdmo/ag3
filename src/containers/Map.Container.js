@@ -7,11 +7,11 @@ export default class MapContainer extends Component {
     render() {
 
         return (
-            <div>
+            <div id='mapContainer'>
                 <OsmMap center={this.props.center} //center
-                        zoom={this.props.zoom}
-                />
+                        zoom={this.props.zoom}/>
             </div>
         );
     }
 }
+// className='mapContainer'

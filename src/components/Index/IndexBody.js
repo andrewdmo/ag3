@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import Error from "../Error";
 import {Route, Switch} from "react-router-dom";
+import MapPage from "../Map/MapPage";
+import Germ from '../Germ/Germ';
 import Process from "../Process/Process";
 import Harvest from "../Harvest/Harvest";
 import Fruit from "../Fruit/Fruit";
 import Plant from "../Plant/Plant";
-import Germ from "../Germ/Germ";
-import MapPage from "../Map/MapPage";
 
 export default class IndexBody extends Component {
 
