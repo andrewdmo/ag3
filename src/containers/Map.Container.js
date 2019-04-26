@@ -24,8 +24,7 @@ export default class MapContainer extends Component {
 
         return (
             <div id={this.state.id}>
-                <
-                    OsmMap
+                <OsmMap
                     center={this.props.center} //center
                     zoom={this.props.zoom}
                 />

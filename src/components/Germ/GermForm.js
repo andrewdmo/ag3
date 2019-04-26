@@ -19,7 +19,9 @@ export default class GermForm extends Component {
             soilHumid: '',
             dateSeeded: '',
             dateSeedling: '',
+            totalGermPurchased: '',
             totalGermSeeded: '',
+            totalGermGerm: '',
             submitForm: false,
             submitMessage: 'Save?'
             // qcPer: this.state.qc / this.state.unbucked
@@ -38,17 +40,10 @@ export default class GermForm extends Component {
         const value = event.target.value;
         // const value = target.type === 'checkbox' ? target.checked : target.value;
 
-        // const buckedPer = (this.state.bucked / this.state.unbucked) * 100;
-        // if (buckedPer) {
-        //     this.setState({buckedPer: buckedPer})
-        // } else {
-        //     this.setState({buckedPer: 0})
-        // }
-
         this.setState({
             [name]: value,
-            // buckedPer: (this.state.bucked / this.state.unbucked) * 100,
-            // qcPer: (this.state.qc / this.state.unbucked) * 100,
+            buckedPer: (this.state.bucked / this.state.unbucked) * 100,
+            qcPer: (this.state.qc / this.state.unbucked) * 100,
         }, () => {
 
             //calculate totals:
@@ -121,7 +116,7 @@ export default class GermForm extends Component {
 
         // const hidden = true;
         return (
-            <div className="form">
+            <div className="germForm">
                 <fieldset>
 
                     <form onSubmit={this.formSubmit}>

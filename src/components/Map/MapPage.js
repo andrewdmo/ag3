@@ -8,7 +8,7 @@ export default class MapPage extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
+        this.state = {x
             center: {
                 // @35.2535921,-83.4138238,366a,35y,12.96h/data=!3m1!1e3
                 lat: 35.2535921,

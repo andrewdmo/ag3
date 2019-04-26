@@ -1,23 +1,31 @@
 
-
-
-
-
-
 .germBack {
-    width: 100%;
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*top: 0;*/
     height: 100%;
-    background-color: dimgray;
+    background-color: rgba(0, 186, 18, 0.69);
+
 }
 
-.ghBase{
-    position: absolute;
+/*TODO: match styles w/ map*/
+
+.germForm {
+
+    /*position: absolute;*/
+    margin: 5vh auto;
+
+}
+
+.ghBase {
+    /*position: absolute;*/
     top: 0;
     right: 0;
     left: 0;
-    width: 15em;
+    margin: auto;
+    width: 20em;
     height: 50em;
-    background-color: lightgray;
+    background-color: rgba(161, 161, 161, 0.81);
 }
 
 {

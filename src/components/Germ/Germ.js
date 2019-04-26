@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import GermForm from "./GermForm";
-import GermMap from "./GermMap";
+import GermSchema from "./GermSchema";
 
 
 
@@ -9,8 +9,9 @@ export default class Germ extends Component {
     render(){
         return(
             <div>
+                <GermSchema/>
                 <GermForm/>
-                <GermMap/>
+
             </div>
         )
     }
