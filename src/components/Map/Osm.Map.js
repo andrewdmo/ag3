@@ -44,7 +44,7 @@ export default class OsmMap extends Component {
                     //sat from Goog:
                     L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
                         maxZoom: 50,
-                        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+                        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
                     }),
 
                     // //normal OSM:

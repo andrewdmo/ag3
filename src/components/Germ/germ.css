@@ -4,8 +4,9 @@
     /*width: 100%;*/
     /*top: 0;*/
     height: 100%;
+    padding: 1em;
     background-color: rgba(0, 186, 18, 0.69);
-
+    background-size: cover;
 }
 
 /*TODO: match styles w/ map*/
@@ -22,12 +23,17 @@
     top: 0;
     right: 0;
     left: 0;
-    margin: auto;
+    margin: 1em auto;
     width: 20em;
     height: 50em;
     background-color: rgba(161, 161, 161, 0.81);
 }
 
-{
+.ghShell {
+    background-color: #e2e2e2;
+    opacity: .3;
+}
+
+.ghShelves {
 
 }

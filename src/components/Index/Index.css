@@ -3,11 +3,12 @@
     height: 150vh;
     width: 100%;
     background-color: #71895c;
-    z-index: 1;
+    /*z-index: -1;*/
 }
 
 .IndexMain {
     position: absolute;
+    /*z-index: 8;*/
     margin: calc(15vh + 3em) 0 0 0;
     height: 100%;
     width: 100%;

@@ -11,7 +11,6 @@ export default class Germ extends Component {
             <div>
                 <GermSchema/>
                 <GermForm/>
-
             </div>
         )
     }
