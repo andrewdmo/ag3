@@ -11,7 +11,11 @@ export default class MenuBar extends Component {
                 <Clock/>
 
                 <NavLink exact to="/"
-                         className="menuText shadow">Home/Map
+                         className="menuText shadow">Home / Report
+                </NavLink>
+
+                <NavLink exact to="/map"
+                         className="menuText shadow">Map
                 </NavLink>
 
                 <NavLink exact to="/germ"

@@ -13,7 +13,6 @@ export default class GermSchema extends Component {
                 <div className="ghBase">
                     <div className="ghShell"/>
                     <div className="ghShelves"/>
-
                 </div>
             </div>
         )

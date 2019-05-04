@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class Plant extends Component {
+export default class PlantPage extends Component {
 
     render() {
         return (

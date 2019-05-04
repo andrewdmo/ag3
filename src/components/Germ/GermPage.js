@@ -4,7 +4,7 @@ import GermSchema from "./GermSchema";
 
 
 
-export default class Germ extends Component {
+export default class GermPage extends Component {
 
     render(){
         return(

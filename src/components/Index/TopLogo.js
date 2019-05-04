@@ -19,7 +19,7 @@ export default class TopLogo extends Component {
 
     // use state for rotation/effects:
     logoClick = (e) => {
-        e.preventDefault(); //prevent default link behavior
+        // e.preventDefault(); //prevent default link behavior
 
         Index.forceUpdate = (e) => {
             console.log('forceUpdate e: ' + e);
