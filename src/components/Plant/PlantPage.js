@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
+import MapPage from "../Map/MapPage";
 
 export default class PlantPage extends Component {
 
     render() {
         return (
             <div>
-                <h3 className="topTitle blink">-[Planting]-</h3>
+                <MapPage/>
             </div>
         )
     }

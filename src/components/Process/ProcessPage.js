@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import BuckForm from "./BuckForm";
 import "./process.css";
+import SortForm from "./SortForm";
+import TrimForm from "./TrimForm";
+import QCForm from "./QCForm";
 
 export default class ProcessPage extends Component {
 
@@ -8,6 +11,9 @@ export default class ProcessPage extends Component {
         return (
             <div>
                 <BuckForm/>
+                <SortForm/>
+                <TrimForm/>
+                <QCForm/>
             </div>
         )
     }

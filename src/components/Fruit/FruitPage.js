@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
+import MapPage from "../Map/MapPage";
 
-export default class Harvest extends Component {
+export default class FruitPage extends Component {
 
     render() {
         return (
             <div>
-                <h3 className="topTitle blink">-[Harvest]-</h3>
+                <MapPage/>
             </div>
         )
     }

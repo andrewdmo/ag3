@@ -4,8 +4,14 @@ export default class HomeReport extends Component {
 
     render() {
         return (
-            <div>
+            <div className="homeReport">
                 HomeReport
+
+
+
+
+
+                [live inventory]
             </div>
         );
     }
