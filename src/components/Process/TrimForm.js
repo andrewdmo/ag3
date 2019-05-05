@@ -95,7 +95,7 @@ export default class TrimForm extends Component {
     //         this.setState({
     //             qc: {
     //                 hidden: false
-    //             }xxxxxxxxx
+    //             }
     //         }); //bucked if
     //     } else if (e.name !== "qc") {
     //         this.setState({
@@ -126,7 +126,7 @@ export default class TrimForm extends Component {
                     <form onSubmit={this.formSubmit}>
                         <table>
                             <caption>
-                                AG3 Bucking Form 4.2.0
+                                AG3 Trimming Form 4.2.0
                             </caption>
 
                             <tbody>

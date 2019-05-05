@@ -60,17 +60,18 @@ input[type="button"]:focus {
 
 .IndexBack {
     min-height: 150vh;
-    width: 100%;
+    height: 100%;
     max-width: 100vw;
     background-color: #71895c;
-    /*z-index: -1;*/
 }
 
 .IndexMain {
     position: absolute;
     /*z-index: 8;*/
-    margin: calc(15vh + 3em) 0 0 0;
-    height: 100%;
+    margin: calc(15vh + 3em) 0 1vmax 0;
+    padding: 0 0 3vmax 0;
+
+    height: 85%;
     width: 100%;
     background-color: gainsboro;
 }

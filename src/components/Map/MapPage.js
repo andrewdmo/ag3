@@ -23,9 +23,8 @@ export default class MapPage extends Component {
             //     '                    }}\n' +
             //     '                    zoom={19}/>'
         };
-
-
     }
+
 
     render() {
 

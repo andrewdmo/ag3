@@ -2,6 +2,7 @@
 .form {
     position: absolute;
     margin: 5vh auto;
+    background-color: lightgray;
 }
 
 .form:nth-child(n){

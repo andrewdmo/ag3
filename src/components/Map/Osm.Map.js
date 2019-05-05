@@ -67,7 +67,7 @@ export default class OsmMap extends Component {
 
     render() {
         return (
-                <div id="map"/>
+            <div id="map"/>
         )
     }
 }
