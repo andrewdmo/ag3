@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import './process.css';
+import routeql from '../../controllers/routeql';
+import {Query} from "routeql/src";
 
 export default class BuckForm extends Component {
 
@@ -28,6 +29,10 @@ export default class BuckForm extends Component {
         this.fieldChange = this.fieldChange.bind(this);
         this.formSubmit = this.formSubmit.bind(this);
         this.radioClick = this.radioClick.bind(this);
+    }
+
+    componentDidMount() {
+        Query
     }
 
 

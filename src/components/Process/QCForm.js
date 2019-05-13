@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './process.css';
 
 export default class QCForm extends Component {
 
