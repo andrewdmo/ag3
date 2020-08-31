@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import routeql from '../../controllers/routeql';
-import {Query} from "routeql/src";
 
 export default class BuckForm extends Component {
 
@@ -31,9 +29,9 @@ export default class BuckForm extends Component {
         this.radioClick = this.radioClick.bind(this);
     }
 
-    componentDidMount() {
-        Query
-    }
+    // componentDidUpdate() {
+    //     // routeql.Mutation();
+    // }
 
 
     fieldChange = (event) => {
